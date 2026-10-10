@@ -17,3 +17,5 @@ python -m pytest -v
 
 Перевірка покриття
 python -m pytest --cov=eta --cov-report=term-missing
+
+Функція eta_hours(distance_km, express) приймає відстань доставки в кілометрах (distance_km) і логічний параметр типу доставки (express): True — експрес, False — звичайна доставка. Функція повертає розрахунковий час доставки в годинах. Якщо відстань від’ємна, функція викликає виняток ValueError з повідомленням Distance cannot be negative.
